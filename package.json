@@ -1,0 +1,25 @@
+{
+  "name": "blog-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shirooo098/Blog-Project-NodeExpressEJS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Shirooo098/Blog-Project-NodeExpressEJS/issues"
+  },
+  "homepage": "https://github.com/Shirooo098/Blog-Project-NodeExpressEJS#readme",
+  "description": ""
+}
