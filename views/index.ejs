@@ -1,16 +1,19 @@
 <%- include("partials/header.ejs") %>
 
+<h1>Blog Posts</h1>
 <ul>
-    <% blogPosts.forEach(post => { %>
+    <% blogs.forEach((post, index) => { %>
     <li>
         <p>Title: <%= post.post%></p>
     </li>
     <li>
         <p>Author: <%= post.author%></p>
     </li>
-    <li>
-        <button value="/edit">Edit</button>
-        <button value="/delete">Delete</button>
-    </li>
+    <form action="/edit/<%= index %>" method="GET">
+        <button type="submit">Edit</button>
+    </form>
+    <form action="/delete/<%= index %>" method="POST">
+        <button type="submit">Delete</button>
+    </form>
     <% }); %>
 </ul>

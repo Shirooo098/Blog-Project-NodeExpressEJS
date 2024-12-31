@@ -1,0 +1,12 @@
+<%- include("partials/header.ejs") %>
+
+<h1>Edit Blog Post</h1>
+<form action="/edit/<%= index %>" method="POST">
+    <label for="">Blog Post:</label>
+    <input type="text" name="blog" value="<%= blogPost.post %>">
+    <label for="">Author</label>
+    <input type="text" name="author" value="<%= blogPost.author %>">
+
+    <button type="edit">UPDATE</button>
+    <a href="/">Cancel</a>
+</form>
