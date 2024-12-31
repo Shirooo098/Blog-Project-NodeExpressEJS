@@ -1,7 +1,16 @@
-<form action="/submit" method="POST">
-    <label for="">Blog</label>
-    <input type="text" name="blog">
-    <label for="">Author</label>
-    <input type="text" name="author">
-    <input type="submit" value="OK">
-</form>
+<%- include("partials/header.ejs") %>
+
+<ul>
+    <% blogPosts.forEach(post => { %>
+    <li>
+        <p>Title: <%= post.post%></p>
+    </li>
+    <li>
+        <p>Author: <%= post.author%></p>
+    </li>
+    <li>
+        <button value="/edit">Edit</button>
+        <button value="/delete">Delete</button>
+    </li>
+    <% }); %>
+</ul>
